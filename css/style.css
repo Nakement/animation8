@@ -1,0 +1,129 @@
+.abs {
+	position: absolute;
+}
+
+.background {
+	height: 850px;
+	width: 1250px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.back {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	height: 800px;
+}
+.top {
+	position: absolute;
+	width: 200px;
+	top: 40px;
+	left: 0;
+	z-index: 6;
+	animation: top-moving 10s infinite ;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+@keyframes top-moving {
+	from {
+		left: 0;
+	}
+	to {
+		left: 800px;
+	}
+}
+.middle {
+	position: absolute;
+	width: 300px;
+	top: 150px;
+	right: 0;
+	z-index: 6;
+	animation: middle-moving 10s infinite ;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+@keyframes middle-moving {
+	from {
+		right: 0;
+	}
+	to {
+		right: 800px;
+	}
+}
+.bottom {
+	position: absolute;
+	width: 350px;
+	top: 300px;
+	z-index: 6;
+	animation: bottom-moving 10s infinite ;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+@keyframes bottom-moving {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 480px;
+	}
+}
+.witch {
+	position: absolute;
+	width: 150px;
+	top: 300px;
+	right: 20px;
+	z-index: 5;
+	animation: witch-moving 10s infinite ;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+@keyframes witch-moving {
+	0% {
+		top: 300px;
+		right: 20px;
+		opacity: 1;
+	}
+	50% {
+		top: 300px;
+		right: 600px;
+		opacity: 1;
+	}
+	75% {
+		top: 300px;
+		right: 610px;
+		opacity: 0,9;
+	}
+	100% {
+		top: 300px;
+		right: 800px;
+		opacity: 0;
+	}
+}
+.moon {
+	position: absolute;
+	width: 200px;
+	left: 450px;
+	bottom: 50px;
+	z-index: 4;
+	animation: moon-moving 10s infinite ;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+@keyframes moon-moving {
+	from {
+		bottom: 50px;
+	}
+	to {
+		bottom: 500px;
+	}
+}
